@@ -20,7 +20,6 @@
 
 			// Loop Start
 			while ( have_posts() ) : the_post();
-
 				if ( has_post_thumbnail() ) {
 					echo '<div class="post-media">';
 						the_post_thumbnail('ashe-full-thumbnail');
