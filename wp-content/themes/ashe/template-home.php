@@ -65,7 +65,7 @@
 	<?php
 	
 	// Sidebar Right
-	get_template_part( 'templates/sidebars/sidebar', 'right' ); 
+	//get_template_part( 'templates/sidebars/sidebar', 'right' ); 
 
 	?>
 
