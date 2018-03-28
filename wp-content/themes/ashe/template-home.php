@@ -58,10 +58,74 @@
 
 		</article>
 
+<style>
+    ul.custom_cat_list {
+        list-style: none;
+        float: left;
+        width: 100%;
+    }
+    ul.custom_cat_list li {
+        width: 33%;
+        float: left;
+        margin-right: 1%;
+    }
+    .custom_cat_name {
+	    font-size: 20px;
+	    float: left;
+	    text-align: center;
+	    width: 100%;
+	    background-color: #F6F6F6;
+	    padding-top: 10px;
+	    padding-bottom: 10px;
+	    font-weight: bold;
+	}
+    .custom_cat_list a {
+    	float: left;
+    	width: 100%;
+    }
+</style>
+
+
+	<!-- <div class="container">
+		<div class="raw">
+			<div class="col-md-12">
+				<?php
+					$terms = get_terms('eventcategory');
+					foreach ( $terms as $term ) {
+						$file = get_term_meta( $term->term_id, 'wpcf-image', true );
+						echo '<div class="col-md-3 col-md-3">';
+							echo '<a href="'.get_category_link($term->term_id).'">' . $term->name . '</a>';
+							echo '<div style="border:1px solid blue;">';
+								echo '<img src="';
+									echo esc_html($file);
+								echo '" class="dept-img">';
+							echo '</div>';
+						echo "</div>";// closes .col-sm-12 and .col-md-3 div
+					}	
+				?>
+			</div>
+		</div>
+	</div> -->
+	
+	
+
 		<?php get_template_part( 'templates/single/comments', 'area' ); ?>
 
 	</div><!-- .main-container -->
-
+	<ul class="custom_cat_list">
+	    <?php $terms = get_terms('eventcategory'); ?>
+	        <?php 
+	        	foreach ($terms as $term) {
+	        	$file = get_term_meta( $term->term_id, 'wpcf-image', true );
+	        ?>
+	            <li class="custom_cat_li">
+	            	<a href="<?php echo get_category_link($term->term_id); ?>">	
+	            		<span class="custom_cat_name"><?php echo $term->name; ?></span>
+	            		<img src="<?php echo esc_html($file) ?>" class="dept-img">
+	            	</a>
+	            </li>
+	    <?php } ?>
+	<ul>
 	<?php
 	
 	// Sidebar Right
