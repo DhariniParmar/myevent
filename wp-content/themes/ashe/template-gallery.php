@@ -11,9 +11,9 @@
 	<?php
 	
 	// Sidebar Left
-	get_template_part( 'templates/sidebars/sidebar', 'left' ); 
+	//get_template_part( 'templates/sidebars/sidebar', 'left' ); 
 
-	?>
+	?> 
 
 	<!-- Main Container -->
 	<div class="main-container">

@@ -34,6 +34,16 @@ Tags: blog, e-commerce, food-and-drink, one-column, two-columns, three-columns, 
 17.0 Pages
 18.0 Preloader
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+0.0 Additional CSS
+--------------------------------------------------------------*/
+
+.sf-element legend {
+    font-size: 25px;
+}
+
+
+
 
 /*--------------------------------------------------------------
 1.0 Normalize
@@ -1011,10 +1021,12 @@ sup {
   position: relative;
   padding: 0 16px;
   margin-left: 5px;
+ color: #000000;
 }
 
 #main-menu li a:first-child {
   margin-left: 0;
+
 }
 
 #main-menu > li > a {

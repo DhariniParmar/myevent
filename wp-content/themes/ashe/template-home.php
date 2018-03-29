@@ -15,8 +15,8 @@
 
 	?>
 
-	<!-- Main Container -->
-	<div class="main-container">
+	<!-- Main Container -
+	<div class="main-container"> -->
 		
 		<article id="page-<?php the_ID(); ?>" <?php post_class(); ?>>
 
@@ -58,6 +58,8 @@
 
 		</article>
 
+		
+
 <style>
     ul.custom_cat_list {
         list-style: none;
@@ -67,22 +69,27 @@
     ul.custom_cat_list li {
         width: 33%;
         float: left;
-        margin-right: 1%;
+        margin-right: 10px;
+
     }
     .custom_cat_name {
 	    font-size: 20px;
-	    float: left;
+	    float:left;
 	    text-align: center;
 	    width: 100%;
 	    background-color: #F6F6F6;
-	    padding-top: 10px;
+	    padding-top: 5px;
 	    padding-bottom: 10px;
 	    font-weight: bold;
 	}
     .custom_cat_list a {
     	float: left;
-    	width: 100%;
+    	width: 250px;
+		
     }
+	.custom_cat_list img {
+		height: 200px;
+	}
 </style>
 
 
@@ -107,11 +114,11 @@
 		</div>
 	</div> -->
 	
-	
-
+	<!--
+	</div><!-- .main-container --> 
 		<?php get_template_part( 'templates/single/comments', 'area' ); ?>
 
-	</div><!-- .main-container -->
+	
 	<ul class="custom_cat_list">
 	    <?php $terms = get_terms('eventcategory'); ?>
 	        <?php 
