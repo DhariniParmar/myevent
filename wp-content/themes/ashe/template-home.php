@@ -13,7 +13,7 @@
 	<?php
 	
 	// Sidebar Left
-	get_template_part( 'templates/sidebars/sidebar', 'left' ); 
+	//get_template_part( 'templates/sidebars/sidebar', 'left' ); 
 
 	?>
 
@@ -69,11 +69,10 @@
         width: 100%%;
     }
     ul.custom_cat_list li {
-        width: 33%;
-        float: left;
-        margin-right: 10px;
-
-    }
+	    width: 24%;
+	    float: left;
+	    margin: 5px;
+	}
     .custom_cat_name {
 	    font-size: 20px;
 	    float:left;
@@ -138,7 +137,7 @@
 	<?php
 	
 	// Sidebar Right
-	get_template_part( 'templates/sidebars/sidebar', 'right' ); 
+	//get_template_part( 'templates/sidebars/sidebar', 'right' ); 
 
 	?>
 
