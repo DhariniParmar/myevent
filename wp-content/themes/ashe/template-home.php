@@ -6,7 +6,9 @@
 	get_template_part( 'templates/header/featured', 'slider' );
 ?>
 
-<div class="main-content clear-fix<?php echo esc_attr(ashe_options( 'general_content_width' )) === 'boxed' ? ' boxed-wrapper': ''; ?>" data-sidebar-sticky="<?php echo esc_attr( ashe_options( 'general_sidebar_sticky' )  ); ?>">
+<div class="main-content clear-fix<?php echo esc_attr(ashe_options( 'general_content_width' )) === 'boxed' ? ' boxed-wrapper': ''; ?>" data-sidebar-sticky="<?php echo esc_attr( ashe_options( 'general_sidebar_sticky' )  ); ?>"
+
+ >
 	
 	<?php
 	
@@ -64,7 +66,7 @@
     ul.custom_cat_list {
         list-style: none;
         float: left;
-        width: 100%;
+        width: 100%%;
     }
     ul.custom_cat_list li {
         width: 33%;
@@ -136,7 +138,7 @@
 	<?php
 	
 	// Sidebar Right
-	//get_template_part( 'templates/sidebars/sidebar', 'right' ); 
+	get_template_part( 'templates/sidebars/sidebar', 'right' ); 
 
 	?>
 

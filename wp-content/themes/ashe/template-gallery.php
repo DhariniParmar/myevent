@@ -6,7 +6,9 @@
 	//get_template_part( 'templates/header/featured', 'slider' );
 ?> 
   -->
-<div class="main-content clear-fix<?php echo esc_attr(ashe_options( 'general_content_width' )) === 'boxed' ? ' boxed-wrapper': ''; ?>" data-sidebar-sticky="<?php echo esc_attr( ashe_options( 'general_sidebar_sticky' )  ); ?>">
+
+<div class="main-content clear-fix"> 
+
 	
 	<?php
 	
@@ -68,6 +70,7 @@
 	//get_template_part( 'templates/sidebars/sidebar', 'right' ); 
 
 	?>
+	
 
 </div><!-- #page-content -->
 

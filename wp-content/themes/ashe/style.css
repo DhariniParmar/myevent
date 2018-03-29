@@ -41,10 +41,16 @@ Tags: blog, e-commerce, food-and-drink, one-column, two-columns, three-columns, 
 .sf-element legend {
     font-size: 25px;
 }
+.header-logo a, .site-description {
+    color: #111;
+	font-size:25px;
+}
 
-
-
-
+ @media screen and (max-width: 640px)
+.header-logo a {
+    font-size: 30px !important;
+    line-height: 1 !important;
+}
 /*--------------------------------------------------------------
 1.0 Normalize
 Styles based on normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css
@@ -764,7 +770,7 @@ sup {
 .header-logo a {
   display: inline-block;
   text-transform: uppercase;
-  font-size: 100px;
+  font-size: 40px;
   line-height: 1;
 }
 
