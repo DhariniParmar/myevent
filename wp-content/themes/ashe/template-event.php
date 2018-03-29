@@ -18,7 +18,7 @@ data-sidebar-sticky="<?php echo esc_attr( ashe_options( 'general_sidebar_sticky'
 	?>
 
 	<!-- Main Container -->
-	<div class="main-container">
+	<!-- <div class="main-container"> -->
 		
 		<article id="page-<?php the_ID(); ?>" <?php post_class(); ?>>
 
@@ -62,7 +62,7 @@ data-sidebar-sticky="<?php echo esc_attr( ashe_options( 'general_sidebar_sticky'
 
 		<?php get_template_part( 'templates/single/comments', 'area' ); ?>
 
-	</div><!-- .main-container -->
+	<!-- </div> --><!-- .main-container -->
 
 	<?php
 	
