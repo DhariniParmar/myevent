@@ -2955,8 +2955,9 @@ font-family: 'Open Sans';
   font-weight: bold;
 }
 
-#top-bar {
-	background-color:#842626;
+#top-bar
+, .clear-fix {
+	background-color: #842626;
 }
 .main-Menu-container nav
 {

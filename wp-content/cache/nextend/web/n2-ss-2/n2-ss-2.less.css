@@ -766,7 +766,7 @@ div#n2-ss-2 .n2-ss-background-animation .tile {
   outline: 1px solid rgba(0,0,0,0);
 }
 div#n2-ss-2 {
-  width: 1300px;
+  width: 1500px;
   float: left;
 }
 html[dir="rtl"] div#n2-ss-2 {
@@ -844,7 +844,7 @@ div#n2-ss-2 .n2-ss-slide {
 }
 div#n2-ss-2 .n2-ss-layers-container {
   position: relative;
-  width: 1300px;
+  width: 1500px;
   height: 500px;
 }
 div#n2-ss-2 .n2-ss-parallax-clip > .n2-ss-layers-container {
