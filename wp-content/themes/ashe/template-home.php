@@ -3,7 +3,7 @@
 <?php get_header(); ?>
 
 <?php
-	get_template_part( 'templates/header/featured', 'slider' );
+	// get_template_part( 'templates/header/featured', 'slider' );
 ?>
 
 <div class="main-content clear-fix<?php echo esc_attr(ashe_options( 'general_content_width' )) === 'boxed' ? ' boxed-wrapper': ''; ?>" data-sidebar-sticky="<?php echo esc_attr( ashe_options( 'general_sidebar_sticky' )  ); ?>"
@@ -121,7 +121,7 @@
 
 	
 	<ul class="custom_cat_list">
-	    <?php $terms = get_terms('eventcategory'); ?>
+	    <?php $terms = get_terms('featurecategory'); ?>
 	        <?php 
 	        	foreach ($terms as $term) {
 	        	$file = get_term_meta( $term->term_id, 'wpcf-image', true );

@@ -672,6 +672,7 @@ sup {
 #top-bar {
   text-align: center;
   box-shadow: 0px 1px 5px rgba(0,0,0, 0.1);
+  background-color: #842626;
 }
 
 #top-menu li {
@@ -2863,6 +2864,10 @@ body,
     -webkit-animation: fadein 5s;
 }
 
+/*--------------------------------------------------------------
+19.0 New Changes
+--------------------------------------------------------------*/
+
 @keyframes fadein {
     from {
         opacity:0;
@@ -2880,7 +2885,7 @@ body,
     }
 }
 
-.widget-title {
+.widget-title, .post-title {
  font-weight:bold;
 font-family: 'Open Sans';
  -webkit-animation: jump 2s ease 0s infinite normal ;
@@ -2948,4 +2953,12 @@ font-family: 'Open Sans';
 }
 .textwidget p{
   font-weight: bold;
+}
+
+#top-bar {
+	background-color:#842626;
+}
+.main-Menu-container nav
+{
+	background-color:#842626;
 }
