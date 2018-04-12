@@ -2966,3 +2966,8 @@ font-family: 'Open Sans';
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
+.header-logo a
+{
+    color: #fff !important;
+    text-shadow: 2px 12px 30px #000 !important; 
+}
