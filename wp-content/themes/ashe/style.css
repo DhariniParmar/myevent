@@ -2955,11 +2955,14 @@ font-family: 'Open Sans';
   font-weight: bold;
 }
 
-#top-bar
-, .clear-fix {
-	background-color: #842626;
+#main-nav {
+	background-color: #842626 !important;
 }
 .main-Menu-container nav
 {
 	background-color:#842626;
+}
+.main-change {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
